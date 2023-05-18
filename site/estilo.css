@@ -1,0 +1,20 @@
+.navbar_logo {
+width: 50px
+
+}
+
+.secaodecards{
+height: 442PX;
+margin-bottom: 20PX;
+
+}
+
+.card:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.carde{
+  transition: 0.5;
+
+}
