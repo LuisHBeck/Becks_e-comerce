@@ -2,6 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 import pandas as pd
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 
 class Web():
     def __init__(self) -> None:
@@ -59,8 +62,9 @@ class Web():
 
         self.archive_create(products, "CSV")
         self.archive_create(products, "XLSX")
+        self.pdf_generator(products)
             
-            
+
     @staticmethod
     def archive_create(products, archive_type):
         dataframe = pd.DataFrame(products)
@@ -68,3 +72,32 @@ class Web():
             dataframe.to_csv('Products.csv', index=False, sep=";")
         elif archive_type == "XLSX":
             dataframe.to_excel('Products.xlsx', index=False)
+
+    
+    @staticmethod
+    def pdf_generator(data):
+        df = pd.DataFrame(data)
+
+        # Converter o DataFrame em uma lista de listas
+        data = [list(df.columns)] + df.values.tolist()
+
+        # Configurar o estilo da tabela
+        style = TableStyle([('BACKGROUND', (0, 0), (-1, 0), colors.gray),
+                            ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+                            ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+                            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+                            ('FONTSIZE', (0, 0), (-1, 0), 12),
+                            ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+                            ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+                            ('GRID', (0, 0), (-1, -1), 1, colors.black)])
+
+        # Configurar o tamanho das colunas
+        col_widths = [250, 250, 150]
+
+        # Criar a tabela
+        table = Table(data, colWidths=col_widths)
+        table.setStyle(style)
+
+        # Criar o documento PDF
+        pdf = SimpleDocTemplate("tabela.pdf", pagesize=letter)
+        pdf.build([table])
