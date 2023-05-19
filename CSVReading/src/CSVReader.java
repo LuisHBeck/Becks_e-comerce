@@ -6,7 +6,7 @@ import java.util.List;
 
 public class CSVReader {
     public static void main(String[] args) {
-        String path = "C:/Users/47238341840/Desktop/e-comerce-main/produtos.csv";
+        String path = "C:/Users/47238341840/Desktop/e-comerce/archives/Products.csv";
         List<Products> productsList = new ArrayList<>();
 
         try (BufferedReader bReader = new BufferedReader(new FileReader(path))){

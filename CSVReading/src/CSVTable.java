@@ -9,7 +9,7 @@ import javax.swing.JTable;
 
 public class CSVTable {
     public static void main(String[] args) {
-        String path = "C:/Users/47238341840/Desktop/e-comerce-main/produtos.csv";
+        String path = "C:/Users/47238341840/Desktop/e-comerce/archives/Products.csv";
         ArrayList<String> generalProd = new ArrayList<>();
         String[][] productData = new String[21][3];
         int counter = 0;
@@ -43,7 +43,7 @@ public class CSVTable {
                     }
                 }
             }
-            
+
             JTable table = new JTable(productData, productData[0]);
             JScrollPane scrollPane = new JScrollPane(table);
 

@@ -28,6 +28,7 @@ class Web():
 
         self.scrap()  
 
+
     def scrap(self):
         sleep(2)
         self.driver.get(self.site)
@@ -69,9 +70,9 @@ class Web():
     def archive_create(products, archive_type):
         dataframe = pd.DataFrame(products)
         if archive_type == "CSV":
-            dataframe.to_csv('Products.csv', index=False, sep=";")
+            dataframe.to_csv('./archives/Products.csv', index=False, sep=";")
         elif archive_type == "XLSX":
-            dataframe.to_excel('Products.xlsx', index=False)
+            dataframe.to_excel('./archives/Products.xlsx', index=False)
 
     
     @staticmethod
@@ -95,5 +96,5 @@ class Web():
         table = Table(data, colWidths=col_widths)
         table.setStyle(style)
 
-        pdf = SimpleDocTemplate("tabela.pdf", pagesize=letter)
+        pdf = SimpleDocTemplate("./archives/Products.pdf", pagesize=letter)
         pdf.build([table])
