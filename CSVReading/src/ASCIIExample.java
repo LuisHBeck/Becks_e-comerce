@@ -1,11 +1,16 @@
 public class ASCIIExample {
     public static void main(String[] args) {
-        String[][] data = {
-            {"Nome", "Idade", "Cidade"},
-            {"João", "25", "São Paulo"},
-            {"Maria", "30", "Rio de Janeiro"},
-            {"Carlos", "40", "Curitiba"}
-        };
+        String[][] data = new String[3][3];
+
+        data[0][0] = "João";
+        data[0][1] = "25";
+        data[0][2] = "São Paulo";
+        data[1][0] = "Teste4";
+        data[1][1] = "Teste5";
+        data[1][2] = "Teste6";
+        data[2][0] = "Teste7";
+        data[2][1] = "Teste8";
+        data[2][2] = "Teste9";
 
         // Encontra a largura máxima de cada coluna
         int[] columnWidths = new int[data[0].length];

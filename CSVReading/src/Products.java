@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Products {
     private String product;
     private String description;
@@ -34,11 +36,7 @@ public class Products {
     }
 
     @Override
-    public String toString() {
-        return "Product{" +
-                "product=" + product +
-                ", description='" + description + '\'' +
-                ", price=" + price +
-                '}';
+    public List toString() {
+        return [product + " " + " " + description + " "+ price];
     }
 }
