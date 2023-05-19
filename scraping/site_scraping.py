@@ -81,7 +81,6 @@ class Web():
         # Converter o DataFrame em uma lista de listas
         data = [list(df.columns)] + df.values.tolist()
 
-        # Configurar o estilo da tabela
         style = TableStyle([('BACKGROUND', (0, 0), (-1, 0), colors.gray),
                             ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
                             ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
@@ -91,13 +90,10 @@ class Web():
                             ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
                             ('GRID', (0, 0), (-1, -1), 1, colors.black)])
 
-        # Configurar o tamanho das colunas
         col_widths = [250, 250, 150]
 
-        # Criar a tabela
         table = Table(data, colWidths=col_widths)
         table.setStyle(style)
 
-        # Criar o documento PDF
         pdf = SimpleDocTemplate("tabela.pdf", pagesize=letter)
         pdf.build([table])
