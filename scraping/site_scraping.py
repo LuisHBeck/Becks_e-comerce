@@ -21,7 +21,9 @@ class Web():
 
         options = webdriver.ChromeOptions()
         options.add_argument("--headless")
-        self.driver = webdriver.Chrome(options=options)    
+        self.driver = webdriver.Chrome(options=options)  
+
+        self.scrap()  
 
     def scrap(self):
         sleep(2)
@@ -56,9 +58,4 @@ class Web():
                 }
 
                 dataframe = pd.DataFrame(products)
-                dataframe.to_csv('produtos.csv', index=False)
-
-                
-
-                
-
+                dataframe.to_csv('produtos.csv', index=False, sep=";")
