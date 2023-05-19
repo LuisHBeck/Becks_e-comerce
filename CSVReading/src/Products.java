@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class Products {
     private String product;
     private String description;
@@ -36,7 +34,7 @@ public class Products {
     }
 
     @Override
-    public List toString() {
-        return [product + " " + " " + description + " "+ price];
+    public String toString() {
+        return product + " " + " " + description + " "+ price;
     }
 }
