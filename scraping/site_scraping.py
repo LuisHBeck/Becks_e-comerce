@@ -57,5 +57,14 @@ class Web():
                     'price': price_list
                 }
 
-                dataframe = pd.DataFrame(products)
-                dataframe.to_csv('produtos.csv', index=False, sep=";")
+        self.archive_create(products, "CSV")
+        self.archive_create(products, "XLSX")
+            
+            
+    @staticmethod
+    def archive_create(products, archive_type):
+        dataframe = pd.DataFrame(products)
+        if archive_type == "CSV":
+            dataframe.to_csv('Products.csv', index=False, sep=";")
+        elif archive_type == "XLSX":
+            dataframe.to_excel('Products.xlsx', index=False)

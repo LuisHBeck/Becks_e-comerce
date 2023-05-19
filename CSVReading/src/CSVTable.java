@@ -43,7 +43,7 @@ public class CSVTable {
                     }
                 }
             }
-
+            
             JTable table = new JTable(productData, productData[0]);
             JScrollPane scrollPane = new JScrollPane(table);
 
