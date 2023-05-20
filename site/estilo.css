@@ -21,12 +21,12 @@
 }
 
 .navbar_logo {
-width: 50px
+  width: 50px
 }
 
 .secaodecards{
-height: 442PX;
-margin-bottom: 20PX;
+  height: 442PX;
+  margin-bottom: 20PX;
 }
 
 .card:hover{
@@ -36,7 +36,6 @@ margin-bottom: 20PX;
 
 .carde{
   transition: 0.5;
-
 }
 
 #navbar {
@@ -49,6 +48,11 @@ margin-bottom: 20PX;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #card1 {
@@ -58,9 +62,9 @@ margin-bottom: 20PX;
 }
 
 #cardn {
-  /* width: 18rem; */
+  width: 18rem;
   float: left;
-  margin-left: 25px;
-  width: 300px;
-  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
 }
