@@ -1,12 +1,32 @@
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    display: none;
+  }
+  .content {
+    padding: 20px;
+  }
+}
+
 .navbar_logo {
 width: 50px
-
 }
 
 .secaodecards{
 height: 442PX;
 margin-bottom: 20PX;
-
 }
 
 .card:hover{
@@ -17,4 +37,30 @@ margin-bottom: 20PX;
 .carde{
   transition: 0.5;
 
+}
+
+#navbar {
+  background-color: #00003D;
+}
+
+.cardsec {
+  margin-bottom: 25px;
+  height: 514px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#card1 {
+  width: 18rem;
+  float: left;
+  margin-left: 145px;
+}
+
+#cardn {
+  /* width: 18rem; */
+  float: left;
+  margin-left: 25px;
+  width: 300px;
+  margin-bottom: 20px;
 }
