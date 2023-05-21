@@ -132,7 +132,7 @@
   width: 48px;
   height: 34px;
   border-radius: 6px;
-  border: 2px solid #56c5db;
+  border: 2px solid #0069d9;
   text-align: center;
   background-color: #eee;
 }
@@ -166,7 +166,7 @@
 .purchase-button {
   display: flex;
   margin: 24px auto 0;
-  background-color: #56c5db;
+  background-color: #0069d9;
   color: var(--white);
   border: 0;
   border-radius: 6px;
