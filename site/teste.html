@@ -17,6 +17,9 @@
     <!-- MEU CSS -->
     <link rel="stylesheet" href="estilo.css">
 
+    <!-- JS DO CARRINHO DE COMPRAS -->
+    <script async src="shoppingcart.js"></script>
+
     <title>Beck's</title>
   </head>
 
@@ -338,6 +341,69 @@
     </div>
 
 
+    <!-- CARRINHO DE COMPRAS  -->
+    <section class="container normal-section">
+      <h2 class="text-center">CARRINHO</h2>
+      <br>
+      
+      <!-- cabeçalho tabela -->
+      <table class="card-table">
+        <thead>
+          <tr>
+            <th class="table-head-item first-col">ITEM</th>
+            <th class="table-head-item second-col">PREÇO</th>
+            <th class="table-head-item third-col">QUANTIDADE</th>
+          </tr>
+        </thead>
+
+        <!-- corpo da tabela com os produtos -->
+        <tbody>
+          <tr class="cart-product">
+            <td class="product-identification">
+              <img class="cart-product-image" src="Imagens produtos/Pc Gamer/7.png" alt="Pc02">
+              <strong class="cart-product-title">Pc Gamer - Ryzen 7</strong>
+            </td>
+            <td>
+              <span class="cart-product-price">R$2.912,87</span>
+            </td>
+            <td>
+              <input class="product-qtd-input" type="number" value="1" min="0">
+              <button class="remove-product-button" type="button">Remover</button>
+            </td>
+          </tr>
+
+          <tr class="cart-product">
+            <td class="product-identification">
+              <img class="cart-product-image" src="Imagens produtos/Monitor/3.png" alt="Monitor03">
+              <strong class="cart-product-title">Monitor gamer</strong>
+            </td>
+            <td>
+              <span class="cart-product-price">R$3.218,94</span>
+            </td>
+            <td>
+              <input class="product-qtd-input" type="number" value="1" min="0">
+              <button class="remove-product-button" type="button">Remover</button>
+            </td>
+          </tr>
+
+        </tbody>
+
+        <!-- footer da tabela com o preço final -->
+        <tfoot>
+          <tr>
+            <td colspan="3" class="cart-total-container">
+              <strong>Total</strong>
+              <span>R$4.527,32</span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <!-- botão de finalizar compra -->
+      <button class="purchase-button" type="button">FINALIZAR COMPRA</button>
+    </section>
+
+    <br>
     <!-- Footer -->
     <div class="container">
       <footer class="py-3 my-4">
