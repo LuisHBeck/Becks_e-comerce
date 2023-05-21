@@ -2,309 +2,421 @@
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- JS BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- MEU CSS -->
     <link rel="stylesheet" href="estilo.css">
+
+    <!-- JS DO CARRINHO DE COMPRAS -->
+    <script async src="shoppingcart.js"></script>
+
     <title>Beck's</title>
   </head>
+
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00003D;">
-  <a class="navbar-brand" href="#"><img src="logo/Laranja .png" alt="" class="navbar_logo"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Início <span class="sr-only">(página atual)</span></a>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PCs</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="gamer.html">Gamer</a>
-          <a class="dropdown-item" href="notebook.html">Notebook</a>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+      <a class="navbar-brand" href="#"><img src="logo/Laranja .png" alt="" class="navbar_logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Início <span class="sr-only">(página atual)</span></a>
+          </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Periféricos
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PCs</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="monito.html">Monitor</a>
-              <a class="dropdown-item" href="teclado.html">Teclado</a>
-              <a class="dropdown-item" href="mouse.html">Mouse</a>
-              <a class="dropdown-item" href="headset.html">Headset</a>
+              <a class="dropdown-item" href="gamer.html">Gamer</a>
+              <a class="dropdown-item" href="notebook.html">Notebook</a>
+            </div>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Periféricos
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="monito.html">Monitor</a>
+                  <a class="dropdown-item" href="teclado.html">Teclado</a>
+                  <a class="dropdown-item" href="mouse.html">Mouse</a>
+                  <a class="dropdown-item" href="headset.html">Headset</a>
+                </div>
 
                   <li class="nav-item">
                     <a class="nav-link" href="login.html">Login</a>
                   </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
-    </form>
-  </div>
-</nav>
+               </li>
+        </ul>
 
-<!-- CARROSSEL -->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="Imagens banner/banner_01.png" alt="Primeiro Slide">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- CARROSSEL -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="Imagens banner/banner_01.png" alt="Primeiro Slide">
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="Imagens banner/banner_02.png" alt="Segundo Slide">
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="Imagens banner/banner_03.png" alt="Terceiro Slide">
+        </div>
+      </div>
+
+      <!-- MOVIMENTAÇÃO DAS IMAGENS -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="Imagens banner/banner_02.png" alt="Segundo Slide">
+
+    <br><br>
+
+    <!-- TITULO MAIS VENDIDOS -->
+    <h2 class="text-center">MAIS VENDIDOS</h2>
+
+    <br><br>
+
+    <!-- CARDS #1-->
+    <div class="cardsec">
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Pc Gamer\7.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Pc Gamer - Ryzen 7</h5>
+          <p class="card-text">Ryzen 5, 16gb Ram, RTX3070</p>
+          <p class="card-text"><b>R$2.912,87</b></p>
+          <a href="pc1.html" class="btn btn-primary">Saiba mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Monitor\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor Sansung Odyssey</h5>
+          <p class="card-text">27 polegads, Full HD, HDMI</p>
+          <p class="card-text"><b>R$2.274,57</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Headset\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset JBL Quantum 810</h5>
+          <p class="card-text">Microfone integrado, Over-ear</p>
+          <p class="card-text"><b>R$1.254,57</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Mouse\3.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse LogiTech G502</h5>
+          <p class="card-text">Cabo 2,10m, 100 - 25.600 dpi</p>
+          <p class="card-text"><b>R$247,20</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Teclado\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado Razer Huntsman</h5>
+          <p class="card-text">Função anti-ghosting, USB-C</p>
+          <p class="card-text"><b>R$617,42</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="Imagens banner/banner_03.png" alt="Terceiro Slide">
+
+    <!-- CARDS #2 -->
+    <div class="cardsec">
+  
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Mosuepad\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mousepad Husk</h5>
+          <p class="card-text">Base antiderrapante, 400 x 300</p>
+          <p class="card-text"><b>R$49,90</b></p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Notebook\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Acer Nitro 5</h5>
+          <p class="card-text">Intel Core i5, Tela de 15,6”</p>
+          <p class="card-text"><b>R$4.399,99</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Cadeira game r\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cadeira Gamer - Alpha</h5>
+          <p class="card-text">Reclinável, Encosto lombar</p>
+          <p class="card-text"><b>R$902,64</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\streamdeck\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Streamdeck - Elgato</h5>
+          <p class="card-text">15 teclas LCD, USB-C</p>
+          <p class="card-text"><b>R$1.430,56</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Microfone\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Microfone - HyperX</h5>
+          <p class="card-text">Base antivibração, Pop filter</p>
+          <p class="card-text"><b>R$799,99</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
     </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div>
-<br>
-<br>
 
-<!-- CARDS -->
-<h2 class="text-center">MAIS VENDIDOS</h2>
-<br>
-<div style="margin-bottom: 25px; height: 514px;">
+    <!-- CARDS #3 -->
+    <div class="cardsec">
 
-  <div class="card" style="width: 18rem; float:left; margin-left: 145px">
-    <img class="card-img-top" src="Imagens produtos\Pc Gamer\7.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Pc Gamer - Ryzen 7</h5>
-      <p class="card-text">Ryzen 7, 16gb Ram, RTX3070</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="pc1.html" class="btn btn-primary">Saiba mais</a>
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Pc Gamer\3.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Pc Gamer - Intel I9</h5>
+          <p class="card-text">Intel I9, 16gb Ram, RTX 3060</p>
+          <p class="card-text"><b>R$8.999,00</b></p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Monitor\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor AOC B320</h5>
+          <p class="card-text">27 polegads, Full HD, HDMI</p>
+          <p class="card-text"><b>R$1.879,29</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Headset\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset JBL Quantum 610</h5>
+          <p class="card-text">Microfone integrado, Over-ear</p>
+          <p class="card-text"><b>R$909,42</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Mouse\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse Redragon - Storm</h5>
+          <p class="card-text">Cabo 2,10m, 100 - 25.600 dpi</p>
+          <p class="card-text"><b>R$179,90</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Teclado\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado RedDragon DYAUS</h5>
+          <p class="card-text">Função anti-ghosting, USB-C</p>
+          <p class="card-text"><b>R$139,99</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Monitor\1.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Monitor Sansung Odyssey</h5>
-      <p class="card-text">27 polegads, Full HD, HDMI</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
+    <!-- CARDS #4 -->
+    <div class="cardsec">
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Mosuepad\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mousepad Havit</h5>
+          <p class="card-text">Base antiderrapante, 900 x 300</p>
+          <p class="card-text"><b>R$46,99</b></p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Notebook\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">AlienWare m15 R6</h5>
+          <p class="card-text"> Intel i5, Tela de 16"</p>
+          <p class="card-text"><b>R$13.499,99</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Cadeira game r\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cadeira Gamer - Alpha</h5>
+          <p class="card-text">Reclinável, Encosto lombar</p>
+          <p class="card-text"><b>R$1.784,35</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\streamdeck\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Streamdeck - Elgato</h5>
+          <p class="card-text">6 teclas LCD, USB-C</p>
+          <p class="card-text"><b>R$949,88</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="card" id="cardn">
+        <img class="card-img-top" src="Imagens produtos\Microfone\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Microfone - HyperX</h5>
+          <p class="card-text">Base antivibração, Pop filter</p>
+          <p class="card-text"><b>R$873,05</b></p>
+          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="#" class="btn btn-success"><img src="logo/bag.svg" alt=""></a>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Headset\1.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Headset JBL Quantum 810</h5>
-      <p class="card-text">Microfone integrado, Over-ear</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
+
+    <!-- CARRINHO DE COMPRAS  -->
+    <section class="container normal-section">
+      <h2 class="text-center">CARRINHO</h2>
+      <br>
+      
+      <!-- cabeçalho tabela -->
+      <table class="card-table">
+        <thead>
+          <tr>
+            <th class="table-head-item first-col">ITEM</th>
+            <th class="table-head-item second-col">PREÇO</th>
+            <th class="table-head-item third-col">QUANTIDADE</th>
+          </tr>
+        </thead>
+
+        <!-- corpo da tabela com os produtos -->
+        <tbody>
+          <tr class="cart-product">
+            <td class="product-identification">
+              <img class="cart-product-image" src="Imagens produtos/Pc Gamer/7.png" alt="Pc02">
+              <strong class="cart-product-title">Pc Gamer - Ryzen 7</strong>
+            </td>
+            <td>
+              <span class="cart-product-price">R$2.912,87</span>
+            </td>
+            <td>
+              <input class="product-qtd-input" type="number" value="1" min="0">
+              <button class="remove-product-button" type="button">Remover</button>
+            </td>
+          </tr>
+
+          <tr class="cart-product">
+            <td class="product-identification">
+              <img class="cart-product-image" src="Imagens produtos/Monitor/3.png" alt="Monitor03">
+              <strong class="cart-product-title">Monitor gamer</strong>
+            </td>
+            <td>
+              <span class="cart-product-price">R$3.218,94</span>
+            </td>
+            <td>
+              <input class="product-qtd-input" type="number" value="1" min="0">
+              <button class="remove-product-button" type="button">Remover</button>
+            </td>
+          </tr>
+
+        </tbody>
+
+        <!-- footer da tabela com o preço final -->
+        <tfoot>
+          <tr>
+            <td colspan="3" class="cart-total-container">
+              <strong>Total</strong>
+              <span>R$4.527,32</span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <!-- botão de finalizar compra -->
+      <button class="purchase-button" type="button">FINALIZAR COMPRA</button>
+    </section>
+
+    <br>
+    <!-- Footer -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Departamentos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Atendimento</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Institucional</a></li>
+
+        </ul>
+        <p class="text-center text-muted">© 2022 BECK's Company, Inc</p>
+      </footer>
     </div>
-  </div>
 
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Mouse\3.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Mouse LogiTech G502</h5>
-      <p class="card-text">Cabo 2,10m, 100 - 25.600 dpi</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Teclado\1.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Teclado Razer Huntsman</h5>
-      <p class="card-text">Função anti-ghosting, USB-C</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-</div>
-</div>
-
-
-
-<div style="margin-bottom: 10px; height: 514px;">
-  <div class="card" style="width: 18rem; float:left; margin-left: 145px">
-    <img class="card-img-top" src="Imagens produtos\Mosuepad\1.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Mousepad Husk</h5>
-      <p class="card-text">Base antiderrapante, 400 x 300</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Notebook\1.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Notebook Gamer Acer</h5>
-      <p class="card-text">Intel Core i5, Tela de 15,6”</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Cadeira game r\2.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Cadeira Gamer - Alpha</h5>
-      <p class="card-text">Reclinável, Encosto lombar</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\streamdeck\1.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Streamdeck - Elgato</h5>
-      <p class="card-text">15 teclas LCD, USB-C</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Microfone\1.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Microfone - HyperX</h5>
-      <p class="card-text">Base antivibração, Pop filter</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-</div>
-<!-- Cards final-->
-
-<!-- CARDS 2 -->
-<div style="margin-bottom: 25px; height: 514px;">
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 145px">
-    <img class="card-img-top" src="Imagens produtos\Pc Gamer\3.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Pc Gamer - Intel I9</h5>
-      <p class="card-text">Intel I9, 16gb Ram, GTX 3090</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Monitor\2.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Monitor AOC B320</h5>
-      <p class="card-text">27 polegads, Full HD, HDMI</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Headset\2.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Headset JBL Quantum 610</h5>
-      <p class="card-text">Microfone integrado, Over-ear</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Mouse\1.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Mouse Redragon - Storm</h5>
-      <p class="card-text">Cabo 2,10m, 100 - 25.600 dpi</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Teclado\2.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Teclado RedDragon DYAUS</h5>
-      <p class="card-text">Função anti-ghosting, USB-C</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-</div>
-</div>
-
-<div style="margin-bottom: 10px; height: 514px;">
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 145px">
-    <img class="card-img-top" src="Imagens produtos\Mosuepad\2.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Mousepad Havit</h5>
-      <p class="card-text">Base antiderrapante, 900 x 300</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Notebook\2.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Notebook AlienWare</h5>
-      <p class="card-text"> Intel i5, Tela de 16"</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Cadeira game r\1.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Cadeira Gamer - Alpha</h5>
-      <p class="card-text">Reclinável, Encosto lombar</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\streamdeck\2.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Streamdeck - Elgato</h5>
-      <p class="card-text">6 teclas LCD, USB-C</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem; float:left; margin-left: 25px ">
-    <img class="card-img-top" src="Imagens produtos\Microfone\2.png" alt="Imagem de capa do card">
-    <div class="card-body text-center">
-      <h5 class="card-title">Microfone - HyperX</h5>
-      <p class="card-text">Base antivibração, Pop filter</p>
-      <p class="card-text"><b>R$5500</b></p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
-    </div>
-  </div>
-</div>
-<!-- Cards final 2-->
-
-<!-- Footer-->
-<div class="container">
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Departamentos</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Atendimento</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Institucional</a></li>
-
-    </ul>
-    <p class="text-center text-muted">© 2022 BECK's Company, Inc</p>
-  </footer>
-</div>
   </body>
 </html>
