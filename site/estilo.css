@@ -181,3 +181,19 @@
 .purchase-button:hover {
   filter: brightness(0.8);
 }
+
+#shoppingButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: #0069d9;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
