@@ -12,13 +12,13 @@ class Web():
 
         self.map = {
             'product': {
-                'xpath': '/html/body/div[*Y*]/div[*X*]/div/h5'
+                'xpath': '/html/body/div[2]/div[*X*]/div/h5'
             },
             'description': {
-                'xpath': '/html/body/div[*Y*]/div[*X*]/div/p[1]'
+                'xpath': '/html/body/div[2]/div[*X*]/div/p[1]'
             },
             'price': {
-                'xpath': '/html/body/div[*Y*]/div[*X*]/div/p[2]/b'
+                'xpath': '/html/body/div[2]/div[*X*]/div/p[2]/b'
             }
         }
 
@@ -38,28 +38,28 @@ class Web():
         description_list = []
         price_list = []
 
-        for y in range(2, 6):
-            for x in range(1, 6):
-                product = self.driver.find_element(
-                    By.XPATH, self.map['product']['xpath']
-                    .replace('*Y*', f'{y}').replace('*X*', f'{x}')).text
-                product_list.append(product)
-                
-                description = self.driver.find_element(
-                    By.XPATH, self.map['description']['xpath']
-                    .replace('*Y*', f'{y}').replace('*X*', f'{x}')).text
-                description_list.append(description)
-                
-                price = self.driver.find_element(
-                    By.XPATH, self.map['price']['xpath']
-                    .replace('*Y*', f'{y}').replace('*X*', f'{x}')).text
-                price_list.append(price)
 
-                products = {
-                    'product': product_list,
-                    'description': description_list,
-                    'price': price_list
-                }
+        for x in range(1, 21):
+            product = self.driver.find_element(
+                By.XPATH, self.map['product']['xpath']
+                .replace('*X*', f'{x}')).text
+            product_list.append(product)
+            
+            description = self.driver.find_element(
+                By.XPATH, self.map['description']['xpath']
+                .replace('*X*', f'{x}')).text
+            description_list.append(description)
+            
+            price = self.driver.find_element(
+                By.XPATH, self.map['price']['xpath']
+                .replace('*X*', f'{x}')).text
+            price_list.append(price)
+
+            products = {
+                'product': product_list,
+                'description': description_list,
+                'price': price_list
+            }
 
         self.archive_create(products, "CSV")
         self.archive_create(products, "XLSX")
