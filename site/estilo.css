@@ -52,7 +52,7 @@
 
 .cardsec {
   margin-bottom: 25px;
-  height: 514px;
+  /* height: 514px; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 20px;
@@ -71,15 +71,7 @@
   margin-left: 145px;
 }
 
-.cardn {
-  width: 18rem;
-  float: left;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 15px;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .container {
   max-width: 850px;
