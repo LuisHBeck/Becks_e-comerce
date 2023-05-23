@@ -8,7 +8,7 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 
 class Web():
     def __init__(self) -> None:
-        self.site = 'http://127.0.0.1:5500/site/teste.html'
+        self.site = 'http://127.0.0.1:5500/site/index.html'
 
         self.map = {
             'product': {
@@ -18,7 +18,7 @@ class Web():
                 'xpath': '/html/body/div[2]/div[*X*]/div/p[1]'
             },
             'price': {
-                'xpath': '/html/body/div[2]/div[*X*]/div/p[2]/b'
+                'xpath': '/html/body/div[2]/div[*X*]/div/p[2]/strong'
             }
         }
 
