@@ -210,3 +210,16 @@
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 20px;
 }
+
+.card-texto {
+  display: inline-block;
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card-texto {
+  pointer-events: none;
+}
