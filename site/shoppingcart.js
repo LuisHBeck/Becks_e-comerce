@@ -122,4 +122,3 @@ function updateTotal(){
     totalAmount = totalAmount.replace(".", ",")
     document.querySelector(".cart-total-container span").innerText = "R$" + totalAmount
 }
-

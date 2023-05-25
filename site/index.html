@@ -57,7 +57,7 @@
                 </div>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#shoppingcart">🛒</a>
+                    <a class="nav-link" href="#shoppingcart" data-toggle="modal" data-target="#exampleModal">🛒</a>
                   </li>
                </li>
         </ul>
@@ -234,7 +234,7 @@
           <h5 class="card-title">Monitor AOC B320</h5>
           <p class="card-text">27 polegads, Full HD, HDMI</p>
           <p class="card-text"><strong class="price">R$1.879,29</strong></p>
-          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
           <button class="btn btn-success">🛒</button>
         </div>
       </div>
@@ -300,7 +300,7 @@
           <h5 class="card-title">Cadeira Gamer - Alpha</h5>
           <p class="card-text">Reclinável, Encosto lombar</p>
           <p class="card-text"><strong class="price">R$1.784,35</strong></p>
-          <a href="#" class="btn btn-primary">Saiba Mais</a>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
           <button class="btn btn-success">🛒</button>
         </div>
       </div>
@@ -331,70 +331,89 @@
     <div class="cart-grid">
       <!-- CARRINHO DE COMPRAS  -->
       <section class="container normal-section" id="shoppingcart">
-        <h2 class="text-center">CARRINHO</h2>
-        <br>
-        
-        <!-- cabeçalho tabela -->
-        <table class="card-table">
-          <thead>
-            <tr>
-              <th class="table-head-item first-col">ITEM</th>
-              <th class="table-head-item second-col">PREÇO</th>
-              <th class="table-head-item third-col">QUANTIDADE</th>
-            </tr>
-          </thead>
 
-          <!-- corpo da tabela com os produtos -->
-          <tbody>
-            <!-- <tr class="cart-product">
-              <td class="product-identification">
-                <img class="cart-product-image" src="Imagens produtos/Pc Gamer/7.png" alt="Pc02">
-                <strong class="cart-product-title">Pc Gamer - Ryzen 7</strong>
-              </td>
-              <td>
-                <span class="cart-product-price">R$2.912,87</span>
-              </td>
-              <td>
-                <input class="product-qtd-input" type="number" value="1" min="0">
-                <button class="remove-product-button" type="button">Remover</button>
-              </td>
-            </tr>
+        <a href="#shoppingcart" id="shoppingButton" data-toggle="modal" data-target="#exampleModal">
+          🛒
+        </a>
 
-            <tr class="cart-product">
-              <td class="product-identification">
-                <img class="cart-product-image" src="Imagens produtos/Monitor/3.png" alt="Monitor03">
-                <strong class="cart-product-title">Monitor gamer</strong>
-              </td>
-              <td>
-                <span class="cart-product-price">R$3.218,94</span>
-              </td>
-              <td>
-                <input class="product-qtd-input" type="number" value="1" min="0">
-                <button class="remove-product-button" type="button">Remover</button>
-              </td>
-            </tr> -->
-          </tbody>
+        <!-- Button trigger modal
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Launch demo modal
+        </button> -->
 
-          <!-- footer da tabela com o preço final -->
-          <tfoot>
-            <tr>
-              <td colspan="3" class="cart-total-container">
-                <strong>Total</strong>
-                <span>R$0,00</span>
-              </td>
-            </tr>
-          </tfoot>
-        </table>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h5 class="modal-title" id="exampleModalLabel">CARRINHO DE COMPRAS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- cabeçalho tabela -->
+                <table class="card-table">
+                  <thead>
+                    <tr>
+                      <th class="table-head-item first-col">ITEM</th>
+                      <th class="table-head-item second-col">PREÇO</th>
+                      <th class="table-head-item third-col">QUANTIDADE</th>
+                    </tr>
+                  </thead>
 
-        <!-- botão de finalizar compra -->
-        <button class="purchase-button" type="button">FINALIZAR COMPRA</button>
+                  <!-- corpo da tabela com os produtos -->
+                  <tbody>
+                    <!-- <tr class="cart-product">
+                      <td class="product-identification">
+                        <img class="cart-product-image" src="Imagens produtos/Pc Gamer/7.png" alt="Pc02">
+                        <strong class="cart-product-title">Pc Gamer - Ryzen 7</strong>
+                      </td>
+                      <td>
+                        <span class="cart-product-price">R$2.912,87</span>
+                      </td>
+                      <td>
+                        <input class="product-qtd-input" type="number" value="1" min="0">
+                        <button class="remove-product-button" type="button">Remover</button>
+                      </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                      <td class="product-identification">
+                        <img class="cart-product-image" src="Imagens produtos/Monitor/3.png" alt="Monitor03">
+                        <strong class="cart-product-title">Monitor gamer</strong>
+                      </td>
+                      <td>
+                        <span class="cart-product-price">R$3.218,94</span>
+                      </td>
+                      <td>
+                        <input class="product-qtd-input" type="number" value="1" min="0">
+                        <button class="remove-product-button" type="button">Remover</button>
+                      </td>
+                    </tr> -->
+                  </tbody>
+
+                  <!-- footer da tabela com o preço final -->
+                  <tfoot>
+                    <tr>
+                      <td colspan="3" class="cart-total-container">
+                        <strong>Total</strong>
+                        <span>R$0,00</span>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <!-- botão de finalizar compra -->
+                <button class="purchase-button" type="button">FINALIZAR COMPRA</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   
-    <a href="#shoppingcart" id="shoppingButton">
-      🛒
-    </a>
-
     <br>
     <!-- Footer -->
     <div class="container">

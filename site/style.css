@@ -223,3 +223,24 @@
 .card-texto {
   pointer-events: none;
 }
+
+.qnt-btn {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.btn-comprar {
+  --bs-btn-padding-y: 20px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 12.75rem;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.modal-padding {
+  padding: 30px;
+}

@@ -3,10 +3,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-
 public class CSVTable {
     public static void main(String[] args) {
         String path = "C:/Users/47238341840/Desktop/e-comerce/archives/Products.csv";
@@ -44,18 +40,31 @@ public class CSVTable {
                 }
             }
 
-            JTable table = new JTable(productData, productData[0]);
-            JScrollPane scrollPane = new JScrollPane(table);
+            // Encontra a largura máxima de cada coluna
+            int[] columnWidths = new int[productData[0].length];
+            for (String[] row : productData) {
+                for (int i = 0; i < row.length; i++) {
+                    if (row[i].length() > columnWidths[i]) {
+                        columnWidths[i] = row[i].length();
+                    }
+                }
+            }
 
-            JFrame frame = new JFrame();
-            frame.add(scrollPane);
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.pack();
-            frame.setVisible(true);
+            // Imprime a tabela com colunas de tamanho igual
+            for (String[] row : productData) {
+                for (int i = 0; i < row.length; i++) {
+                    System.out.print("| " + formatCell(row[i], columnWidths[i]) + " ");
+                }
+                System.out.println("|");
+            }
 
         }catch (IOException e) {
             System.out.println(e.getMessage());
         }
+    }
+    // Formata uma célula com um tamanho fixo
+    private static String formatCell(String cell, int width) {
+        return String.format("%-" + width + "s", cell);
     }
 }
 
