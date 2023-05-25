@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS DO CARRINHO DE COMPRAS -->
+    <script async src="shoppingcart.js"></script>
+
+    <title>Beck's</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+      <a class="navbar-brand" href="#"><img src="logo/Laranja .png" alt="" class="navbar_logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Início <span class="sr-only">(página atual)</span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PCs</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#computadores">Computadores</a>
+              <a class="dropdown-item" href="#notebooks">Notebooks</a>
+            </div>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Periféricos
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#monitores">Monitores</a>
+                  <a class="dropdown-item" href="#teclados">Teclados</a>
+                  <a class="dropdown-item" href="#mouses">Mouses</a>
+                  <a class="dropdown-item" href="#headsets">Headsets</a>
+                </div>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#shoppingcart" data-toggle="modal" data-target="#exampleModal">🛒</a>
+                  </li>
+               </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- CARROSSEL -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="Imagens banner/banner_01.png" alt="Primeiro Slide">
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="Imagens banner/banner_02.png" alt="Segundo Slide">
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="Imagens banner/banner_03.png" alt="Terceiro Slide">
+        </div>
+      </div>
+
+      <!-- MOVIMENTAÇÃO DAS IMAGENS -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+    <br><br>
+
+    <!-- TITULO MAIS VENDIDOS -->
+    <h2 class="text-center" id="mais-vendidos">MAIS VENDIDOS</h2>
+
+    <br><br>
+
+    <!-- CARDS #1-->
+    <div class="cardsec">
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Pc Gamer\7.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Pc Gamer - Ryzen 7</h5>
+          <p class="card-text">Ryzen 5, 16gb Ram, RTX3070</p>
+          <p class="card-text"><strong class="price">R$2.912,87</strong></p>
+          <a href="pc1.html" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Monitor\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor Sansung Odyssey</h5>
+          <p class="card-text">27 polegads, Full HD, HDMI</p>
+          <p class="card-text"><strong class="price">R$2.274,57</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Headset\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset JBL Quantum 810</h5>
+          <p class="card-text">Microfone integrado, Over-ear</p>
+          <p class="card-text"><strong class="price">R$1.254,57</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Mouse\3.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse LogiTech G502</h5>
+          <p class="card-text">Cabo 2,10m, 100 - 25.600 dpi</p>
+          <p class="card-text"><strong class="price">R$247,20</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Teclado\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado Razer Huntsman</h5>
+          <p class="card-text">Função anti-ghosting, USB-C</p>
+          <p class="card-text"><strong class="price">R$617,42</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Mosuepad\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mousepad Husk</h5>
+          <p class="card-text">Base antiderrapante, 400 x 300</p>
+          <p class="card-text"><strong class="price">R$49,90</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Notebook\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Acer Nitro 5</h5>
+          <p class="card-text">Intel Core i5, Tela de 15,6”</p>
+          <p class="card-text"><strong class="price">R$4.399,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Cadeira game r\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cadeira Gamer - Alpha</h5>
+          <p class="card-text">Reclinável, Encosto lombar</p>
+          <p class="card-text"><strong class="price">R$902,64</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\streamdeck\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Streamdeck - Elgato</h5>
+          <p class="card-text">15 teclas LCD, USB-C</p>
+          <p class="card-text"><strong class="price">R$1.430,56</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Microfone\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Microfone - HyperX</h5>
+          <p class="card-text">Base antivibração, Pop filter</p>
+          <p class="card-text"><strong class="price">R$799,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Pc Gamer\3.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Pc Gamer - Intel I9</h5>
+          <p class="card-text">Intel I9, 16gb Ram, RTX 3060</p>
+          <p class="card-text"><strong class="price">R$8.999,00</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Monitor\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor AOC B320</h5>
+          <p class="card-text">27 polegads, Full HD, HDMI</p>
+          <p class="card-text"><strong class="price">R$1.879,29</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Headset\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset JBL Quantum 610</h5>
+          <p class="card-text">Microfone integrado, Over-ear</p>
+          <p class="card-text"><strong class="price">R$909,42</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Mouse\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse Redragon - Storm</h5>
+          <p class="card-text">Cabo 2,10m, 100 - 25.600 dpi</p>
+          <p class="card-text"><strong class="price">R$179,90</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Teclado\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado RedDragon DYAUS</h5>
+          <p class="card-text">Função anti-ghosting, USB-C</p>
+          <p class="card-text"><strong class="price">R$139,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Mosuepad\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mousepad Havit</h5>
+          <p class="card-text">Base antiderrapante, 900 x 300</p>
+          <p class="card-text"><strong class="price">R$46,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Notebook\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">AlienWare m15 R6</h5>
+          <p class="card-text"> Intel i5, Tela de 16"</p>
+          <p class="card-text"><strong class="price">R$13.499,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Cadeira game r\1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cadeira Gamer - Alpha</h5>
+          <p class="card-text">Reclinável, Encosto lombar</p>
+          <p class="card-text"><strong class="price">R$1.784,35</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\streamdeck\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Streamdeck - Elgato</h5>
+          <p class="card-text">6 teclas LCD, USB-C</p>
+          <p class="card-text"><strong class="price">R$949,88</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos\Microfone\2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Microfone - HyperX</h5>
+          <p class="card-text">Base antivibração, Pop filter</p>
+          <p class="card-text"><strong class="price">R$873,05</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- TITULO MAIS VENDIDOS -->
+    <h2 class="text-center" id="computadores">PC's GAMER</h2>
+
+    <br><br>
+
+    <!-- COMPUTADORES-->
+    <div class="cardsec">
+
+        <div class="card cardn">
+          <img class="card-img-top" src="Imagens produtos/Pc Gamer/1.png" alt="Imagem de capa do card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pc Gamer Mancer #1</h5>
+            <p class="card-text">Ryzen 7, 16GB RAM, 1TB HD</p>
+            <p class="card-text"><strong class="price">R$3.131,17</strong></p>
+            <a href="" class="btn btn-primary">Saiba mais</a>
+            <button class="btn btn-success">🛒</button>
+          </div>
+        </div>
+  
+        <div class="card cardn">
+          <img class="card-img-top" src="Imagens produtos/Pc Gamer/2.png" alt="Imagem de capa do card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pc Gamer Mancer #2</h5>
+            <p class="card-text">Intel I7, 16GB RAM, 240GB SSD</p>
+            <p class="card-text"><strong class="price">R$2.246,23</strong></p>
+            <a href="" class="btn btn-primary">Saiba Mais</a>
+            <button class="btn btn-success">🛒</button>
+          </div>
+        </div>
+  
+        <div class="card cardn">
+          <img class="card-img-top" src="Imagens produtos/Pc Gamer/3.png" alt="Imagem de capa do card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pc Gamer Predator Orion</h5>
+            <p class="card-text">Intel I7, 16GB RAM RTX3070</p>
+            <p class="card-text"><strong class="price">R$11.999,00</strong></p>
+            <a href="" class="btn btn-primary">Saiba Mais</a>
+            <button class="btn btn-success">🛒</button>
+          </div>
+        </div>
+  
+        <div class="card cardn">
+          <img class="card-img-top" src="Imagens produtos/Pc Gamer/4.png" alt="Imagem de capa do card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pc Gamer Concórdia</h5>
+            <p class="card-text">Intel I5, 8GB RAM, GTX1650</p>
+            <p class="card-text"><strong class="price">R$3.499,99</strong></p>
+            <a href="" class="btn btn-primary">Saiba Mais</a>
+            <button class="btn btn-success">🛒</button>
+          </div>
+        </div>
+  
+        <div class="card cardn">
+          <img class="card-img-top" src="Imagens produtos/Pc Gamer/5.png" alt="Imagem de capa do card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pc Gamer Pcfort</h5>
+            <p class="card-text">Ryzen 5, 8GB RAM, 480GB SSD</p>
+            <p class="card-text"><strong class="price">R$2.617,42</strong></p>
+            <a href="" class="btn btn-primary">Saiba Mais</a>
+            <button class="btn btn-success">🛒</button>
+          </div>
+        </div>
+  
+        <div class="card cardn">
+          <img class="card-img-top" src="Imagens produtos/Pc Gamer/6.png" alt="Imagem de capa do card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pc Gamer NOX</h5>
+            <p class="card-text">Ryzen 3, 8GB RAM, 256GB SSD</p>
+            <p class="card-text"><strong class="price">R$49,90</strong></p>
+            <a href="" class="btn btn-primary">Saiba mais</a>
+            <button class="btn btn-success">🛒</button>
+          </div>
+        </div>
+  
+        <div class="card cardn">
+          <img class="card-img-top" src="Imagens produtos/Pc Gamer/7.png" alt="Imagem de capa do card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pc Gamer Neologic</h5>
+            <p class="card-text">Ryzen 7, 32GB RAM, RTX 3070</p>
+            <p class="card-text"><strong class="price">R$7.834,97</strong></p>
+            <a href="" class="btn btn-primary">Saiba Mais</a>
+            <button class="btn btn-success">🛒</button>
+          </div>
+        </div>
+  
+        <div class="card cardn">
+          <img class="card-img-top" src="Imagens produtos/Pc Gamer/8.png" alt="Imagem de capa do card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pc Gamer Radeon</h5>
+            <p class="card-text">Ryzen 5, 16GB RAM, Vega 7</p>
+            <p class="card-text"><strong class="price">R$4.506,64</strong></p>
+            <a href="" class="btn btn-primary">Saiba Mais</a>
+            <button class="btn btn-success">🛒</button>
+          </div>
+        </div>
+  
+        <div class="card cardn">
+          <img class="card-img-top" src="Imagens produtos/Pc Gamer/9.png" alt="Imagem de capa do card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pc Gamer Arena</h5>
+            <p class="card-text">Intel I5, 8GB RAM, GTX 1050TI</p>
+            <p class="card-text"><strong class="price">R$3.956,41</strong></p>
+            <a href="" class="btn btn-primary">Saiba Mais</a>
+            <button class="btn btn-success">🛒</button>
+          </div>
+        </div>
+        
+        <div class="card cardn">
+          <img class="card-img-top" src="Imagens produtos/Pc Gamer/10.png" alt="Imagem de capa do card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pc Gamer Powered</h5>
+            <p class="card-text">Intel I9, 16GB RAM RTX 3090</p>
+            <p class="card-text"><strong class="price">R$11.345,10</strong></p>
+            <a href="" class="btn btn-primary">Saiba Mais</a>
+            <button class="btn btn-success">🛒</button>
+          </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- TITULO MAIS VENDIDOS -->
+    <h2 class="text-center" id="notebooks">NOTEBOOKS</h2>
+
+    <br><br>
+
+    <!-- CARDS #1-->
+    <div class="cardsec">
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Notebook/1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Acer Nitro 5</h5>
+          <p class="card-text">Intel I5, Tela de 15,6”</p>
+          <p class="card-text"><strong class="price">R$4.399,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Notebook/2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">AlienWare m15 R6</h5>
+          <p class="card-text">Intel I5, Tela de 16"</p>
+          <p class="card-text"><strong class="price">R$13.499,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Notebook/3.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Asus ROG Strix G16</h5>
+          <p class="card-text">Intel I9, 16GB RAM RTX 4070</p>
+          <p class="card-text"><strong class="price">R$17.999,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Notebook/4.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Samsung Book</h5>
+          <p class="card-text">Intel I5, 8GM RAM, 256GB SSD</p>
+          <p class="card-text"><strong class="price">R$4.499,00</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Notebook/5.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Samsung Book S</h5>
+          <p class="card-text">Intel I5, 8GM RAM, 256GB SSD</p>
+          <p class="card-text"><strong class="price">R$7.499,42</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Notebook/6.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Samsung Book Dourado</h5>
+          <p class="card-text">Intel I5, 8GM RAM, 512GB SSD</p>
+          <p class="card-text"><strong class="price">R$5.999,90</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Notebook/7.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Azus ZenBook Pro</h5>
+          <p class="card-text">Intel I7, Tela de 14”, MX450</p>
+          <p class="card-text"><strong class="price">R$5.921,37</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Notebook/8.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Azus ZenBook 13</h5>
+          <p class="card-text">Ryzen 7, Tela de 13.3", 8GB Ram</p>
+          <p class="card-text"><strong class="price">R$3.726,56</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Notebook/9.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">AlienWare m15-r6</h5>
+          <p class="card-text">Intel I7, 16GB RAM, RTX 3070</p>
+          <p class="card-text"><strong class="price">R$12.291,14</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+      
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Notebook/10.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Legion 5</h5>
+          <p class="card-text">Ryzen 7, Tela de 15.6", 16GB RAM</p>
+          <p class="card-text"><strong class="price">R$8.560,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- TITULO MAIS VENDIDOS -->
+    <h2 class="text-center" id="monitores">MONITORES</h2>
+
+    <br><br>
+
+    <!-- CARDS #1-->
+    <div class="cardsec">
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Monitor/1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor Sansung Odyssey</h5>
+          <p class="card-text">27 polegads, Full HD, HDMI</p>
+          <p class="card-text"><strong class="price">R$2.274,57</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Monitor/2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor AOC HERO 27</h5>
+          <p class="card-text">27 polegads, Full HD, 144HZ</p>
+          <p class="card-text"><strong class="price">R$1.399,42</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Monitor/3.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor AOC AG-3FCXE</h5>
+          <p class="card-text">31,5" polegads, Full HD, 154HZ</p>
+          <p class="card-text"><strong class="price">R$2.849,05</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Monitor/4.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor LG 34WP6</h5>
+          <p class="card-text">34" polegadas, Ultrawide(3440x1440)</p>
+          <p class="card-text"><strong class="price">R$2.689,00</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Monitor/5.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor ASUS TUF Gaming</h5>
+          <p class="card-text">27" polegadas, Full HD, Painel IPS</p>
+          <p class="card-text"><strong class="price">R$3.199,90</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Monitor/6.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor ASUS TUF3</h5>
+          <p class="card-text">24,5" polegadas, Full HD, 240HZ</p>
+          <p class="card-text"><strong class="price">R$2.149,76</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Monitor/7.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor ROG Strix XG</h5>
+          <p class="card-text">35" polegadsa, 4k, Tela Curva</p>
+          <p class="card-text"><strong class="price">R$3.169,49</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Monitor/8.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor AOC G227</h5>
+          <p class="card-text">27" polegadas, Full HD, 144HZ</p>
+          <p class="card-text"><strong class="price">R$1.799,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Monitor/9.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor ASUS VP</h5>
+          <p class="card-text">23,8", Full HD, 60HZ</p>
+          <p class="card-text"><strong class="price">R$1.327,56</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+      
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Monitor/10.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitor AOC G2 Hero</h5>
+          <p class="card-text">24" polegadas, Full HD, 144HZ</p>
+          <p class="card-text"><strong class="price">R$1.277,10</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <!-- TITULO MAIS VENDIDOS -->
+    <h2 class="text-center" id="teclados">TECLADOS</h2>
+
+    <br><br>
+
+    <!-- CARDS #1-->
+    <div class="cardsec">
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Teclado/1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado Razer Huntsman</h5>
+          <p class="card-text">Função anti-ghosting, USB-C</p>
+          <p class="card-text"><strong class="price">R$617,42</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Teclado/2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado RedDragon DYAUS</h5>
+          <p class="card-text">Função anti-ghosting, USB-C</p>
+          <p class="card-text"><strong class="price">R$139,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Teclado/10.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado RedDragon K551</h5>
+          <p class="card-text">Switch óptico Blue, USB-C, ABNT2</p>
+          <p class="card-text"><strong class="price">R$349,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Teclado/4.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado Razer Cynosa V2</h5>
+          <p class="card-text">Switch membrana, USB-B</p>
+          <p class="card-text"><strong class="price">R$248,09</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Teclado/5.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado Alienware AW510K</h5>
+          <p class="card-text">Switch mecânico, RGB, USB</p>
+          <p class="card-text"><strong class="price">R$1002,00</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Teclado/6.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado RedDragon Lakshmi</h5>
+          <p class="card-text">Switch mecânico, ABNT2, 60%</p>
+          <p class="card-text"><strong class="price">R$174,90</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Teclado/7.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado Steampunk E-Yooso</h5>
+          <p class="card-text">Switch mecânico Red, RBG, 60%</p>
+          <p class="card-text"><strong class="price">R$1.005,20</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Teclado/8.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado Rainbow RGB</h5>
+          <p class="card-text">Switch membrana, RGB</p>
+          <p class="card-text"><strong class="price">R$102,40</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Teclado/9.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado Fallen Falcão-Peregrino</h5>
+          <p class="card-text">Switch mecânico Red, USB-C</p>
+          <p class="card-text"><strong class="price">R$549,90</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+      
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Teclado/3.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Teclado Razer Huntsman</h5>
+          <p class="card-text">Função anti-ghosting, USB-C</p>
+          <p class="card-text"><strong class="price">R$617,42</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <!-- TITULO MAIS VENDIDOS -->
+    <h2 class="text-center" id="mouse">MOUSES</h2>
+
+    <br><br>
+
+    <!-- CARDS #1-->
+    <div class="cardsec">
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Mouse/1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse Redragon - Storm</h5>
+          <p class="card-text">Cabo 2,10m, 100 - 25.600 dpi</p>
+          <p class="card-text"><strong class="price">R$179,90</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Mouse/2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse Razer Viper Mini</h5>
+          <p class="card-text">Ultra leve: 61g, SpeedFlex</p>
+          <p class="card-text"><strong class="price">R$339,07</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Mouse/3.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse LogiTech G502</h5>
+          <p class="card-text">Cabo 2,10m, 100 - 25.600 dpi</p>
+          <p class="card-text"><strong class="price">R$247,20</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Mouse/4.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse LogiTech G203 Prodigy</h5>
+          <p class="card-text">6 botões, Cabo 2,10m, 200-8000dpi</p>
+          <p class="card-text"><strong class="price">R$152,15</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Mouse/5.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse T-Dagger Recruit</h5>
+          <p class="card-text">6 botões, USB</p>
+          <p class="card-text"><strong class="price">R$148,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Mouse/6.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse KUIYN 383</h5>
+          <p class="card-text">Ultra leve, Óptico, Ultra leve</p>
+          <p class="card-text"><strong class="price">R$173,23</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Mouse/7.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse Fortrek Pro M5</h5>
+          <p class="card-text">4 botões, 4800dpi</p>
+          <p class="card-text"><strong class="price">R$95,39</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Mouse/8.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse LogiTech G305</h5>
+          <p class="card-text">Sem-fio, receptor USB, 12000dpi</p>
+          <p class="card-text"><strong class="price">R$232,99,64</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Mouse/9.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse Mancer Lead</h5>
+          <p class="card-text">116g, RBG, cabo 2m</p>
+          <p class="card-text"><strong class="price">R$227,16</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+      
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Mouse/10.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mouse Corsair NightShow</h5>
+          <p class="card-text">6 botões, cabo 2,10m, RBG</p>
+          <p class="card-text"><strong class="price">R$406,91</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <!-- TITULO MAIS VENDIDOS -->
+    <h2 class="text-center" id="headsets">HEADSETS</h2>
+
+    <br><br>
+
+    <!-- CARDS #1-->
+    <div class="cardsec">
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Headset/1.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset JBL Quantum 810</h5>
+          <p class="card-text">Microfone integrado, Over-ear</p>
+          <p class="card-text"><strong class="price">R$1.254,57</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Headset/2.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset JBL Quantum 610</h5>
+          <p class="card-text">Microfone integrado, Over-ear</p>
+          <p class="card-text"><strong class="price">R$909,42</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Headset/3.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset Fallen Morcego</h5>
+          <p class="card-text">Microfone integrado, Over-ear</p>
+          <p class="card-text"><strong class="price">R$505,40</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Headset/4.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset Razer Nari Ultimate</h5>
+          <p class="card-text">Microfone integrado, Over-ear</p>
+          <p class="card-text"><strong class="price">R$1.389,90</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Headset/5.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset Pichau P651</h5>
+          <p class="card-text">Microfone integrado, Over-ear</p>
+          <p class="card-text"><strong class="price">R$511,25</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Headset/6.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset LogiTech G353</h5>
+          <p class="card-text">Microfone integrado, Over-ear, Wireless</p>
+          <p class="card-text"><strong class="price">R$389,00</strong></p>
+          <a href="" class="btn btn-primary">Saiba mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Headset/7.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset LogiTech ProX</h5>
+          <p class="card-text">Microfone integrado e removível, Over-ear</p>
+          <p class="card-text"><strong class="price">R$999,35</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Headset/8.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset LogiTech G435</h5>
+          <p class="card-text">Microfone integrado, Over-ear, Wireless</p>
+          <p class="card-text"><strong class="price">R$428,64</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Headset/9.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset Rapoo Vpro</h5>
+          <p class="card-text">Microfone integrado, Over-ear</p>
+          <p class="card-text"><strong class="price">R$178,90</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+      
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens produtos/Headset/10.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headset Astro A30</h5>
+          <p class="card-text">Microfone integrado, Over-ear</p>
+          <p class="card-text"><strong class="price">R$1.999,99</strong></p>
+          <a href="" class="btn btn-primary">Saiba Mais</a>
+          <button class="btn btn-success">🛒</button>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="cart-grid">
+      <!-- CARRINHO DE COMPRAS  -->
+      <section class="container normal-section" id="shoppingcart">
+
+        <a href="#shoppingcart" id="shoppingButton" data-toggle="modal" data-target="#exampleModal">
+          🛒
+        </a>
+
+        <!-- Button trigger modal
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Launch demo modal
+        </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade modal-padding" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center modal-lg">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h5 class="modal-title" id="exampleModalLabel">CARRINHO DE COMPRAS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- cabeçalho tabela -->
+                <table class="card-table">
+                  <thead>
+                    <tr>
+                      <th class="table-head-item first-col">ITEM</th>
+                      <th class="table-head-item second-col">PREÇO</th>
+                      <th class="table-head-item third-col">QUANTIDADE</th>
+                    </tr>
+                  </thead>
+
+                  <!-- corpo da tabela com os produtos -->
+                  <tbody>
+                    <!-- <tr class="cart-product">
+                      <td class="product-identification">
+                        <img class="cart-product-image" src="Imagens produtos/Pc Gamer/7.png" alt="Pc02">
+                        <strong class="cart-product-title">Pc Gamer - Ryzen 7</strong>
+                      </td>
+                      <td>
+                        <span class="cart-product-price">R$2.912,87</span>
+                      </td>
+                      <td>
+                        <input class="product-qtd-input" type="number" value="1" min="0">
+                        <button class="remove-product-button" type="button">Remover</button>
+                      </td>
+                    </tr>
+
+                    <tr class="cart-product">
+                      <td class="product-identification">
+                        <img class="cart-product-image" src="Imagens produtos/Monitor/3.png" alt="Monitor03">
+                        <strong class="cart-product-title">Monitor gamer</strong>
+                      </td>
+                      <td>
+                        <span class="cart-product-price">R$3.218,94</span>
+                      </td>
+                      <td>
+                        <input class="product-qtd-input" type="number" value="1" min="0">
+                        <button class="remove-product-button" type="button">Remover</button>
+                      </td>
+                    </tr> -->
+                  </tbody>
+
+                  <!-- footer da tabela com o preço final -->
+                  <tfoot>
+                    <tr>
+                      <td colspan="3" class="cart-total-container">
+                        <strong>Total</strong>
+                        <span>R$0,00</span>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <!-- botão de finalizar compra -->
+                <button class="purchase-button" type="button">FINALIZAR COMPRA</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    <br>
+    <!-- Footer -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="footer.html#departamentos" class="nav-link px-2 text-muted">Departamentos</a></li>
+          <li class="nav-item"><a href="footer.html#sobre" class="nav-link px-2 text-muted">Institucional</a></li>
+
+        </ul>
+        <p class="text-center text-muted">© 2023 BECK's Company, Inc</p>
+      </footer>
+    </div>
+  </body>
+</html>
