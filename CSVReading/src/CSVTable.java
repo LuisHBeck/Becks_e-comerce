@@ -35,7 +35,7 @@ public class CSVTable {
                         productData[x][y] = generalProd.get(counter);
                         counter++;
                     } else {
-                        System.out.println("Deu merda");
+                        System.out.println();
                     }
                 }
             }
