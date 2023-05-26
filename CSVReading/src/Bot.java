@@ -7,22 +7,27 @@ import java.util.Scanner;
 public class Bot {
     public static void main(String[] args) {
         Scanner tec = new Scanner(System.in);
-        int chosenOption;
+        int chosenOption, chosenCategory;   
         String path;
+
+        int[] firtsOption = {1,2,3}; 
+        int[] secondOption = {1,2,3,4,5,6}; 
 
         System.out.println("Welcome to Beck's Company Bot!");
         sleep(2000);
 
         while (true) {
-            System.out.println();
-            System.out.println("What do you want to view?");
-            System.out.println("""
-                    [1] - Best Sellers
-                    [2] - ShoppingCart
-                    [3] - Exit
-                    """);
-            chosenOption = tec.nextInt();
-            tec.nextLine();
+            do {
+                System.out.println();
+                System.out.println("What do you want to view?");
+                System.out.println("""
+                        [1] - Best Sellers
+                        [2] - Specific Category       
+                        [3] - Exit
+                        """);
+                chosenOption = tec.nextInt();
+                tec.nextLine();
+            }while (contains(firtsOption, chosenOption) == false);
 
             switch (chosenOption) {
                 case 1:
@@ -30,11 +35,26 @@ public class Bot {
                     sleep(2000);
                     System.out.println();
                     System.out.println("Best Sellers products: ");
-                    printTable("C:/Users/47238341840/Desktop/e-comerce/archives/Products.csv");
+                    printTable("C:/Users/47238341840/Desktop/e-comerce/archives/bestSeller.csv");
                     break;
                 
                 case 2:
-                    System.out.println("Products in your shopping cart");
+                    do {
+                        System.out.println("Choose the category:");
+                        System.out.println("""
+                        [1] - PCs
+                        [2] - Notebooks       
+                        [3] - Video Monitor
+                        [4] - Keyboards
+                        [5] - Mouses
+                        [6] - Headsets
+                        [7] - Exit
+                        """);
+                        chosenCategory = tec.nextInt();
+                        tec.nextLine();
+                    }while (contains(secondOption, chosenCategory) == false);
+
+                    
                     break;
 
                 case 3:
@@ -124,6 +144,17 @@ public class Bot {
         }catch (IOException e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    public static boolean contains(final int[] array, final int v) {
+        boolean result = false;
+        for(int i : array){
+            if(i == v){
+                result = true;
+                break;
+            }
+        }
+        return result;
     }
 }
 
