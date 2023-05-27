@@ -74,7 +74,7 @@ class Web():
     @staticmethod
     def archive_create(products, category):
         dataframe = pd.DataFrame(products)
-        dataframe.to_csv(f'./archives/{category}.csv', index=False, sep=";")
+        dataframe.to_csv(f'scraping/archives_/{category}.csv', index=False, sep=";")
         
 
     @staticmethod
@@ -98,5 +98,5 @@ class Web():
         table = Table(data, colWidths=col_widths)
         table.setStyle(style)
 
-        pdf = SimpleDocTemplate(f"./archives/{category}.pdf", pagesize=letter)
+        pdf = SimpleDocTemplate(f"scraping/archives_/{category}.pdf", pagesize=letter)
         pdf.build([table])

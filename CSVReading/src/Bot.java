@@ -11,8 +11,9 @@ public class Bot {
         String path;
 
         int[] firtsOption = {1,2,3}; 
-        int[] secondOption = {1,2,3,4,5,6}; 
+        int[] secondOption = {1,2,3,4,5,6,7}; 
 
+        clsTerminal();
         System.out.println("Welcome to Beck's Company Bot!");
         sleep(2000);
 
@@ -27,6 +28,7 @@ public class Bot {
                         """);
                 chosenOption = tec.nextInt();
                 tec.nextLine();
+                clsTerminal();
             }while (contains(firtsOption, chosenOption) == false);
 
             switch (chosenOption) {
@@ -35,11 +37,12 @@ public class Bot {
                     sleep(2000);
                     System.out.println();
                     System.out.println("Best Sellers products: ");
-                    printTable("C:/Users/47238341840/Desktop/e-comerce/archives/bestSeller.csv");
+                    printTable("../../scraping/archives_/bestSeller.csv");
                     break;
                 
                 case 2:
                     do {
+                        clsTerminal();
                         System.out.println("Choose the category:");
                         System.out.println("""
                         [1] - PCs
@@ -52,9 +55,69 @@ public class Bot {
                         """);
                         chosenCategory = tec.nextInt();
                         tec.nextLine();
+                        clsTerminal();
                     }while (contains(secondOption, chosenCategory) == false);
 
-                    
+                    switch (chosenCategory) {
+                        case 1:
+                            System.out.println("OK, just a second! We are collecting the data.");
+                            sleep(2000);
+                            System.out.println();
+                            System.out.println("Computers available: ");
+                            printTable("../../scraping/archives_/computers.csv");
+                            break;
+
+                        case 2:
+                            System.out.println("OK, just a second! We are collecting the data.");
+                            sleep(2000);
+                            System.out.println();
+                            System.out.println("Notebooks available: ");
+                            printTable("../../scraping/archives_/notebooks.csv");
+                            break;
+
+                        case 3:
+                            System.out.println("OK, just a second! We are collecting the data.");
+                            sleep(2000);
+                            System.out.println();
+                            System.out.println("Monitors available: ");
+                            printTable("../../scraping/archives_/monitors.csv");
+                            break;
+
+                        case 4:
+                            System.out.println("OK, just a second! We are collecting the data.");
+                            sleep(2000);
+                            System.out.println();
+                            System.out.println("Keyboards available: ");
+                            printTable("../../scraping/archives_/keyboards.csv");
+                            break;
+
+                        case 5:
+                            System.out.println("OK, just a second! We are collecting the data.");
+                            sleep(2000);
+                            System.out.println();
+                            System.out.println("Mouses available: ");
+                            printTable("../../scraping/archives_/mouses.csv");
+                            break;
+
+                        case 6:
+                            System.out.println("OK, just a second! We are collecting the data.");
+                            sleep(2000);
+                            System.out.println();
+                            System.out.println("Headsets available: ");
+                            printTable("../../scraping/archives_/headset.csv");
+                            break;
+
+                        case 7:
+                            sleep(1000);
+                            System.out.println();
+                            System.out.println("Thank you for using our services!");
+                            System.out.println("See you next!");
+                            break;
+                    }
+                    if (chosenCategory == 7){
+                        sleep(1000);
+                        return;
+                    }
                     break;
 
                 case 3:
@@ -90,6 +153,11 @@ public class Bot {
     private static void printTable(String path) {
         ArrayList<String> generalProd = new ArrayList<>();
         String[][] productData = new String[21][3];
+
+        if (!path.equals("../../scraping/archives_/bestSeller.csv")){
+            productData = new String[11][3];
+        }
+        
         int counter = 0;
         productData[0][0] = "Product";
         productData[0][1] = "Description";
@@ -155,6 +223,11 @@ public class Bot {
             }
         }
         return result;
+    }
+
+    public static void clsTerminal() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 }
 
