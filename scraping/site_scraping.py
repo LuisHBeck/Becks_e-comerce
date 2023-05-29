@@ -8,7 +8,7 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 
 class Web():
     def __init__(self) -> None:
-        self.site = 'http://127.0.0.1:5500/site/index.html'
+        self.site = 'http://10.109.72.23/site/'
 
         self.map = {
             'product': {
