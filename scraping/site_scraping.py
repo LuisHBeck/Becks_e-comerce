@@ -8,7 +8,7 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 
 class Web():
     def __init__(self) -> None:
-        self.site = 'http://127.0.0.1:5500/site/index.html'
+        self.site = 'http://10.109.72.23/site/'
 
         self.map = {
             'product': {
@@ -68,13 +68,13 @@ class Web():
             }
 
         self.archive_create(products, category)
-        self.pdf_generator(products, category)
+        # self.pdf_generator(products, category)
             
 
     @staticmethod
     def archive_create(products, category):
         dataframe = pd.DataFrame(products)
-        dataframe.to_csv(f'scraping/archives_/{category}.csv', index=False, sep=";")
+        dataframe.to_csv(f'C:/Users/47238341840/Desktop/e-comerce/scraping/archives_/{category}.csv', index=False, sep=";")
         
 
     @staticmethod
@@ -100,3 +100,7 @@ class Web():
 
         pdf = SimpleDocTemplate(f"scraping/archives_/{category}.pdf", pagesize=letter)
         pdf.build([table])
+
+
+if __name__ == '__main__':
+    site = Web()

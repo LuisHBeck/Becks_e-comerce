@@ -37,7 +37,8 @@ public class Bot {
                     sleep(2000);
                     System.out.println();
                     System.out.println("Best Sellers products: ");
-                    printTable("../../scraping/archives_/bestSeller.csv");
+                    // printTable("../../scraping/archives_/bestSeller.csv");
+                    printTable("C:/Users/47238341840/Desktop/e-comerce/scraping/archives_/bestSeller.csv");
                     break;
                 
                 case 2:
@@ -64,7 +65,7 @@ public class Bot {
                             sleep(2000);
                             System.out.println();
                             System.out.println("Computers available: ");
-                            printTable("../../scraping/archives_/computers.csv");
+                            printTable("C:/Users/47238341840/Desktop/e-comerce/scraping/archives_/computers.csv");
                             break;
 
                         case 2:
@@ -91,7 +92,7 @@ public class Bot {
                             printTable("../../scraping/archives_/keyboards.csv");
                             break;
 
-                        case 5:
+                        case 5:      
                             System.out.println("OK, just a second! We are collecting the data.");
                             sleep(2000);
                             System.out.println();
@@ -154,7 +155,7 @@ public class Bot {
         ArrayList<String> generalProd = new ArrayList<>();
         String[][] productData = new String[21][3];
 
-        if (!path.equals("../../scraping/archives_/bestSeller.csv")){
+        if (!path.equals("C:/Users/47238341840/Desktop/e-comerce/scraping/archives_/bestSeller.csv")){
             productData = new String[11][3];
         }
         
