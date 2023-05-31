@@ -17,6 +17,9 @@ public class Bot {
         System.out.println("Welcome to Beck's Company Bot!");
         sleep(2000);
 
+        System.out.print("Input the archives path>> ");
+        String archivesPath = tec.nextLine();
+
         while (true) {
             do {
                 System.out.println();
@@ -37,8 +40,8 @@ public class Bot {
                     sleep(2000);
                     System.out.println();
                     System.out.println("Best Sellers products: ");
-                    // printTable("../../scraping/archives_/bestSeller.csv");
-                    printTable("C:/Users/47238341840/Desktop/e-comerce/scraping/archives_/bestSeller.csv");
+                    String pathBest = archivesPath + "/bestSeller.csv";
+                    printTable(pathBest);
                     break;
                 
                 case 2:
@@ -65,7 +68,8 @@ public class Bot {
                             sleep(2000);
                             System.out.println();
                             System.out.println("Computers available: ");
-                            printTable("C:/Users/47238341840/Desktop/e-comerce/scraping/archives_/computers.csv");
+                            String pathComputers = archivesPath + "/computers.csv";
+                            printTable(pathComputers);
                             break;
 
                         case 2:
@@ -73,7 +77,8 @@ public class Bot {
                             sleep(2000);
                             System.out.println();
                             System.out.println("Notebooks available: ");
-                            printTable("../../scraping/archives_/notebooks.csv");
+                            String pathNote = archivesPath + "/notebooks.csv";
+                            printTable(pathNote);
                             break;
 
                         case 3:
@@ -81,7 +86,8 @@ public class Bot {
                             sleep(2000);
                             System.out.println();
                             System.out.println("Monitors available: ");
-                            printTable("../../scraping/archives_/monitors.csv");
+                            String pathMonitors = archivesPath + "/monitors.csv";
+                            printTable(pathMonitors);
                             break;
 
                         case 4:
@@ -89,7 +95,8 @@ public class Bot {
                             sleep(2000);
                             System.out.println();
                             System.out.println("Keyboards available: ");
-                            printTable("../../scraping/archives_/keyboards.csv");
+                            String pathKeyboards = archivesPath + "/keyboards.csv";
+                            printTable(pathKeyboards);
                             break;
 
                         case 5:      
@@ -97,7 +104,8 @@ public class Bot {
                             sleep(2000);
                             System.out.println();
                             System.out.println("Mouses available: ");
-                            printTable("../../scraping/archives_/mouses.csv");
+                            String pathMouses = archivesPath + "/mouses.csv";
+                            printTable(pathMouses);
                             break;
 
                         case 6:
@@ -105,7 +113,8 @@ public class Bot {
                             sleep(2000);
                             System.out.println();
                             System.out.println("Headsets available: ");
-                            printTable("../../scraping/archives_/headset.csv");
+                            String pathHeadset = archivesPath + "/headset.csv";
+                            printTable(pathHeadset);
                             break;
 
                         case 7:
@@ -155,7 +164,7 @@ public class Bot {
         ArrayList<String> generalProd = new ArrayList<>();
         String[][] productData = new String[21][3];
 
-        if (!path.equals("C:/Users/47238341840/Desktop/e-comerce/scraping/archives_/bestSeller.csv")){
+        if (!path.contains("bestSeller.csv")){
             productData = new String[11][3];
         }
         

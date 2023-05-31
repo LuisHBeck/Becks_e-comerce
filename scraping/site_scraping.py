@@ -7,8 +7,10 @@ from reportlab.lib import colors
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 
 class Web():
-    def __init__(self) -> None:
-        self.site = 'http://10.109.72.23/site/'
+    def __init__(self, archives_path) -> None:
+        self.site = 'http://127.0.0.1:5500/site/index.html'
+
+        self.archives_path = archives_path
 
         self.map = {
             'product': {
@@ -71,36 +73,36 @@ class Web():
         # self.pdf_generator(products, category)
             
 
-    @staticmethod
-    def archive_create(products, category):
+    def archive_create(self, products, category):
         dataframe = pd.DataFrame(products)
-        dataframe.to_csv(f'C:/Users/47238341840/Desktop/e-comerce/scraping/archives_/{category}.csv', index=False, sep=";")
+        dataframe.to_csv(f'{self.archives_path}/{category}.csv', index=False, sep=";")
         
 
-    @staticmethod
-    def pdf_generator(data, category):
-        df = pd.DataFrame(data)
+    # @staticmethod
+    # def pdf_generator(data, category):
+    #     df = pd.DataFrame(data)
 
-        # Converter o DataFrame em uma lista de listas
-        data = [list(df.columns)] + df.values.tolist()
+    #     # Converter o DataFrame em uma lista de listas
+    #     data = [list(df.columns)] + df.values.tolist()
 
-        style = TableStyle([('BACKGROUND', (0, 0), (-1, 0), colors.gray),
-                            ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
-                            ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-                            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-                            ('FONTSIZE', (0, 0), (-1, 0), 12),
-                            ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
-                            ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
-                            ('GRID', (0, 0), (-1, -1), 1, colors.black)])
+    #     style = TableStyle([('BACKGROUND', (0, 0), (-1, 0), colors.gray),
+    #                         ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+    #                         ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+    #                         ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+    #                         ('FONTSIZE', (0, 0), (-1, 0), 12),
+    #                         ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+    #                         ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+    #                         ('GRID', (0, 0), (-1, -1), 1, colors.black)])
 
-        col_widths = [250, 250, 150]
+    #     col_widths = [250, 250, 150]
 
-        table = Table(data, colWidths=col_widths)
-        table.setStyle(style)
+    #     table = Table(data, colWidths=col_widths)
+    #     table.setStyle(style)
 
-        pdf = SimpleDocTemplate(f"scraping/archives_/{category}.pdf", pagesize=letter)
-        pdf.build([table])
+        # pdf = SimpleDocTemplate(f"scraping/archives_/{category}.pdf", pagesize=letter)
+        # pdf.build([table])
 
 
 if __name__ == '__main__':
-    site = Web()
+    archives_path = str(input('Input where you want to save>> '))
+    site = Web(archives_path)
