@@ -33,11 +33,12 @@ function ready() {
 function makePurchase() {
     if (totalAmount == "0,00") {
         alert("Seu carrinho está vazio! \nAdicione algo antes de finalizar sua compra.")
-    }else {
+    }
+    else {
         alert(
            `
-           Enviamos o boleto para seu e-mail.
            Valor final do pedido: R$${totalAmount}
+           Agora é só preencher os dados de entrega.
            Obrigado pela sua compra, Volte sempre :)
            ` 
         )
