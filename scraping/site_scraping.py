@@ -2,9 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 import pandas as pd
-from reportlab.lib.pagesizes import letter
-from reportlab.lib import colors
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 
 class Web():
     def __init__(self, archives_path) -> None:
@@ -70,37 +67,12 @@ class Web():
             }
 
         self.archive_create(products, category)
-        # self.pdf_generator(products, category)
             
 
     def archive_create(self, products, category):
         dataframe = pd.DataFrame(products)
         dataframe.to_csv(f'{self.archives_path}/{category}.csv', index=False, sep=";")
         
-
-    # @staticmethod
-    # def pdf_generator(data, category):
-    #     df = pd.DataFrame(data)
-
-    #     # Converter o DataFrame em uma lista de listas
-    #     data = [list(df.columns)] + df.values.tolist()
-
-    #     style = TableStyle([('BACKGROUND', (0, 0), (-1, 0), colors.gray),
-    #                         ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
-    #                         ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-    #                         ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-    #                         ('FONTSIZE', (0, 0), (-1, 0), 12),
-    #                         ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
-    #                         ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
-    #                         ('GRID', (0, 0), (-1, -1), 1, colors.black)])
-
-    #     col_widths = [250, 250, 150]
-
-    #     table = Table(data, colWidths=col_widths)
-    #     table.setStyle(style)
-
-        # pdf = SimpleDocTemplate(f"scraping/archives_/{category}.pdf", pagesize=letter)
-        # pdf.build([table])
 
 
 if __name__ == '__main__':
