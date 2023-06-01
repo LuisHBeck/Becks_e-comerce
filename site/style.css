@@ -244,3 +244,41 @@
 .modal-padding {
   padding: 30px;
 }
+
+.endereco-formulario {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.endereco-formulario label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.endereco-formulario input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.endereco-formulario .submit-button {
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.endereco-formulario .submit-button:hover {
+  background-color: #45a049;
+}

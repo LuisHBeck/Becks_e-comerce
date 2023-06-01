@@ -20,6 +20,9 @@
     <!-- JS DO CARRINHO DE COMPRAS -->
     <script async src="shoppingcart.js"></script>
 
+    <!-- JS DO ENDEREÇO -->
+    <script async src="cep.js"></script>
+
     <title>Beck's</title>
   </head>
 
@@ -58,6 +61,10 @@
 
                   <li class="nav-item">
                     <a class="nav-link" href="#shoppingcart" data-toggle="modal" data-target="#exampleModal">🛒</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#endereco" data-toggle="modal" data-target="#endereco">🛒</a>
                   </li>
                </li>
         </ul>
@@ -1136,7 +1143,7 @@
               </div>
               <div class="modal-footer">
                 <!-- botão de finalizar compra -->
-                <button class="purchase-button" type="button">FINALIZAR COMPRA</button>
+                <button class="purchase-button" type="button" href="#endereco" data-toggle="modal" data-target="#endereco">FINALIZAR COMPRA</button>
               </div>
             </div>
           </div>
@@ -1305,6 +1312,44 @@
                                 <h2>⠀R$617,42</h2>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade modal-padding" id="endereco" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-center modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title" id="exampleModalLabel">ENDEREÇO DE ENTREGA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                      <form class="endereco-formulario">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="strCep" name="cep" required>
+                        <br>
+                        <label for="rua">Rua:</label>
+                        <input type="text" id="strRua" name="rua" required>
+                        <br>
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="strBairro" name="bairro" required>
+                        <br>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="strCidade" name="cidade" required>
+                        <br>
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="strEstado" name="estado" required>
+                        <br>
+                        <label for="numero">Número:</label>
+                        <input type="text" id="strNumero" name="numero" required>
+                        <br>
+                        <input type="submit" value="Enviar" class="submit-button">
+                    </form>
                     </div>
                 </div>
             </div>
