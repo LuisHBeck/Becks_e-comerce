@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- CSS BOOTSTRAP -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+      <!-- JS BOOTSTRAP -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <!-- MEU CSS -->
+      <link rel="stylesheet" href="style.css">
+
+      <!-- JS DO CARRINHO DE COMPRAS -->
+      <script async src="shoppingcart.js"></script>
+
+      <title>Beck's</title>
+
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+      <a class="navbar-brand" href="#"><img src="logo/Laranja .png" alt="" class="navbar_logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Início <span class="sr-only">(página atual)</span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PCs</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="pcs.html">Computadores</a>
+              <a class="dropdown-item" href="notebooks.html">Notebooks</a>
+            </div>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Periféricos
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="monitores.html">Monitores</a>
+                  <a class="dropdown-item" href="teclados.html">Teclados</a>
+                  <a class="dropdown-item" href="mouses.html">Mouses</a>
+                  <a class="dropdown-item" href="headsets.html">Headsets</a>
+                </div>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#shoppingcart">🛒</a>
+                  </li>
+                </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </nav>
+
+    <br><br>
+
+    <!-- TITULO DEPARTAMENTOS-->
+    <h2 class="text-center" id="departamentos">DEPARTAMENTOS</h2>
+
+    <br><br>
+
+    <!-- CARDS #1-->
+    <div class="cardsec">
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens banner/banner_01.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Computadores Gamers</h5>
+          <p class="card-text">
+            Aqui você encontra os melhores computadores gamers 🎮
+          </p>
+          <a href="pcs.html" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens banner/banner_02.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Monitores</h5>
+          <p class="card-text">
+            Aqui você encontra os melhores monitores para jogar sem ghosting 💻
+          </p>
+          <a href="notebooks.html" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card cardn">
+        <img class="card-img-top" src="Imagens banner/banner_03.png" alt="Imagem de capa do card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Notebooks</h5>
+          <p class="card-text">
+            Aqui você encontra os melhores periféricos para seu super computador 🖱
+          </p>
+          <a href="notebooks.html" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <!-- TITULO DEPARTAMENTOS-->
+    <h2 class="text-center" id="sobre">SOBRE NÓS</h2>
+
+    <br>
+
+    <div class="cardsec d-flex">
+      <div class="card card-texto" style="width: 70%;">
+        <div class="card-body">
+          <!-- <h5 class="card-title">Sobre Nós</h5> -->
+          <h6 class="card-subtitle mb-2 text-muted text-center">Nossos objetivos</h6>
+          <p class="card-text">
+            Bem-vindo à nossa loja virtual de produtos tecnológicos! Somos apaixonados por tecnologia e estamos aqui para fornecer a você uma experiência incrível no mundo dos dispositivos eletrônicos. Desde PCs gamers poderosos a notebooks portáteis, monitores de alta resolução, teclados ergonômicos, headsets imersivos e mouses precisos, temos tudo o que você precisa para aprimorar sua vida digital.
+            <br>
+            Na nossa loja, buscamos trazer o que há de mais recente e inovador no mercado de tecnologia. Sabemos que os gamers são exigentes e buscam equipamentos de alto desempenho, capazes de proporcionar uma experiência de jogo imersiva e fluida. Por isso, selecionamos cuidadosamente uma variedade de PCs gamers com processadores potentes, placas gráficas avançadas e memória ampla, para que você possa enfrentar os desafios dos jogos mais exigentes.
+            <br>
+            Se você precisa de mobilidade, nossa seleção de notebooks é perfeita para você. Com designs elegantes e leves, esses dispositivos combinam poder de processamento, capacidade de armazenamento e portabilidade, permitindo que você trabalhe ou jogue em qualquer lugar. Seja para uso profissional ou pessoal, temos opções que atendem às suas necessidades específicas.
+            <br>
+            Além disso, oferecemos uma ampla variedade de monitores de alta qualidade, para que você possa desfrutar de imagens nítidas e cores vibrantes em seus jogos e trabalhos visuais. Seja para edição de vídeo, design gráfico ou apenas para desfrutar de filmes e séries com qualidade cinematográfica, nossos monitores estão prontos para atender às suas expectativas.
+            <br>
+            Não podemos esquecer dos periféricos essenciais para otimizar sua experiência tecnológica. Nossos teclados ergonômicos garantem conforto e precisão durante horas de digitação ou jogo intenso. Os headsets proporcionam áudio imersivo, permitindo que você mergulhe totalmente em seus jogos favoritos. E nossos mouses de alta precisão oferecem controle total e respostas rápidas para que você possa executar movimentos precisos em qualquer situação.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="footer.html#departamentos" class="nav-link px-2 text-muted">Departamentos</a></li>
+          <li class="nav-item"><a href="footer.html#sobre" class="nav-link px-2 text-muted">Institucional</a></li>
+
+        </ul>
+        <p class="text-center text-muted">© 2023 BECK's Company, Inc</p>
+      </footer>
+    </div>
+  </body>
+</html>
