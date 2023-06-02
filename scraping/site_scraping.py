@@ -76,5 +76,5 @@ class Web():
 
 
 if __name__ == '__main__':
-    archives_path = str(input('Input where you want to save>> '))
+    archives_path = str(input('Input where do you want to save>> '))
     site = Web(archives_path)
