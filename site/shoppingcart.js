@@ -1,4 +1,4 @@
-// VERIDICAR SE O HTML JÁ ESTÁ PRONTO
+// VERIFICAR SE O HTML JÁ ESTÁ PRONTO
 if (document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready)
 }else {
