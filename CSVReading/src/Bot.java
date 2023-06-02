@@ -8,7 +8,6 @@ public class Bot {
     public static void main(String[] args) {
         Scanner tec = new Scanner(System.in);
         int chosenOption, chosenCategory;   
-        String path;
 
         int[] firtsOption = {1,2,3}; 
         int[] secondOption = {1,2,3,4,5,6,7}; 
