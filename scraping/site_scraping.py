@@ -5,7 +5,8 @@ import pandas as pd
 
 class Web():
     def __init__(self, archives_path) -> None:
-        self.site = 'http://127.0.0.1:5500/site/index.html'
+        
+        self.site = 'https://luishbeck.github.io/Becks_e-comerce/site/'
 
         self.archives_path = archives_path
 
