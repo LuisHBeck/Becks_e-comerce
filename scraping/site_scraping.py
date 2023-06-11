@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 import pandas as pd
+import os
+import sys
 
 class Web():
     def __init__(self, archives_path) -> None:
@@ -50,6 +52,7 @@ class Web():
 
 
         for x in range(1, k):
+            os.system("cls")
             product = self.driver.find_element(
                 By.XPATH, self.map['product']['xpath']
                 .replace('*X*', f'{x}').replace('*Y*', f'{y}')).text
@@ -71,6 +74,8 @@ class Web():
                 'price': price_list
             }
 
+            print(f'{category} success')
+
         self.archive_create(products, category)
             
 
@@ -83,3 +88,5 @@ class Web():
 if __name__ == '__main__':
     archives_path = str(input('Input where do you want to save>> '))
     site = Web(archives_path)
+    print('Success')
+    sys.exit()
