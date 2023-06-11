@@ -5,7 +5,7 @@ E-comerce developed for DS first semester integrative project to demonstrate ski
 
 * https://luishbeck.github.io/Becks_e-comerce/site/
 
-## Becks_e-comerce 
+## Beck's E-comerce 
 My own e-commerce of electronic products, for example: computers, monitors, keyboards and other computer peripherals
 
 * Navbar and Slider
