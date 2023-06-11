@@ -35,4 +35,35 @@ My own e-commerce of electronic products, for example: computers, monitors, keyb
 
     ![delivery address](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/public/readme/delivery_address.png)
 
+
+## Web Scraping + CSV files (Python)
+To perform Web Scraping of Beck's e-comerce site, follow these steps:
+
+* Download the "Scrap.exe" file
+    - https://github.com/LuisHBeck/Becks_e-comerce/blob/main/Scrap.exe
+
+* Create a new folder on your desktop
+
+* Execute "Scrap.exe"
+
+* Paste the full path of your new folder in the field provided
+
+* Wait a few seconds and you will see all the .csv files in the chosen folder
+
+
+## CSV Reader (Java)
+To perform CSV Reading of Beck's e-comerce files, follow these steps:
+
+* Download the "CSVReader.jar" file
+    - https://github.com/LuisHBeck/Becks_e-comerce/blob/main/CSVReader.jar
+
+* Open CMD in this folder
+
+* Run the following command
+    - ```java -jar CSVReader.jar```
+
+* Paste the full path of the folder where you saved the scraping files
+
+* Choose the read option
+
     
