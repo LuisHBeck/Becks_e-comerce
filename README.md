@@ -3,7 +3,24 @@
 ## Project description
 E-comerce developed for DS first semester integrative project to demonstrate skills in Python, Java, HTML, CSS and JavaScript
 
+The objective of the project was the construction of a virtual store containing different categories of products and each of the products has a specific page with a detailed description. 
+This store should have a shopping cart where it is possible to add, increase the quantity, remove and finalize the purchase.
+
+For analysis, a Python program would scrape the site and collect the name, description and price information of each of the products on the site and export this information to a .cvs file. And a java program would be responsible for reading this .csv file and presenting it in a well-organized way for the end user.
+
 * https://luishbeck.github.io/Becks_e-comerce/site/
+
+## Used Technologies  
+* HTML
+* CSS
+* JavaScript
+    - Bootstrap
+* Python
+    - Selenium  
+    - Pandas
+* Java
+    - BufferedReader
+    - FileReader
 
 ## Beck's E-comerce 
 My own e-commerce of electronic products, for example: computers, monitors, keyboards and other computer peripherals
