@@ -11,3 +11,28 @@ My own e-commerce of electronic products, for example: computers, monitors, keyb
 * Navbar and Slider
 
     ![Nav + Slider](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/public/readme/nav_slider.png)
+
+* Best Seller page
+
+    ![best seller page](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/public/readme/best_seller.png)
+
+
+* Specific product categories
+
+    ![specific category](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/public/readme/specific_category.png)
+
+
+* Product Description 
+
+    ![product description](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/public/readme/product_description.png)
+
+
+* Shopping Cart 
+
+    ![product description](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/public/readme/shopping_cart.png)
+
+* Delivery addres 
+
+    ![product description](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/public/readme/delivery_addres.png)
+
+    
