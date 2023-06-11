@@ -22,9 +22,13 @@ class Web():
             }
         }
 
-        options = webdriver.ChromeOptions()
+        # options = webdriver.ChromeOptions()
+        # options.add_argument("--headless")
+        # self.driver = webdriver.Chrome(options=options)  
+
+        options = webdriver.EdgeOptions()
         options.add_argument("--headless")
-        self.driver = webdriver.Chrome(options=options)  
+        self.driver = webdriver.Edge(options=options)  
 
         self.scrap(2, 'bestSeller', 21)
         self.scrap(3, 'computers')
