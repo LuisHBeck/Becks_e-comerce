@@ -31,8 +31,8 @@ My own e-commerce of electronic products, for example: computers, monitors, keyb
 
     ![product description](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/public/readme/shopping_cart.png)
 
-* Delivery addres 
+* Delivery address 
 
-    ![product description](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/public/readme/delivery_addres.png)
+    ![delivery address](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/public/readme/delivery_address.png)
 
     
