@@ -1,6 +1,6 @@
 <!-- ![Logo of the project](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/site/logo/Laranja%20.png) -->
 
-## Project description
+## Project description 
 E-comerce developed for DS first semester integrative project to demonstrate skills in Python, Java, HTML, CSS and JavaScript
 
 The objective of the project was the construction of a virtual store containing different categories of products and each of the products has a specific page with a detailed description. 
@@ -10,7 +10,7 @@ For analysis, a Python program would scrape the site and collect the name, descr
 
 * https://luishbeck.github.io/Becks_e-comerce/site/
 
-## Used Technologies  
+## Used Technologies 💻
 * HTML
 * CSS
 * JavaScript
@@ -22,7 +22,7 @@ For analysis, a Python program would scrape the site and collect the name, descr
     - BufferedReader
     - FileReader
 
-## Beck's E-comerce 
+## Beck's E-comerce 🌐
 My own e-commerce of electronic products, for example: computers, monitors, keyboards and other computer peripherals
 
 * Navbar and Slider
@@ -53,7 +53,7 @@ My own e-commerce of electronic products, for example: computers, monitors, keyb
     ![delivery address](https://github.com/LuisHBeck/Becks_e-comerce/blob/main/public/readme/delivery_address.png)
 
 
-## Web Scraping + CSV files (Python)
+## Web Scraping + CSV files (Python) 🐍
 To perform Web Scraping of Beck's e-comerce site, follow these steps:
 
 * Download the "Scrap.exe" file
@@ -68,7 +68,7 @@ To perform Web Scraping of Beck's e-comerce site, follow these steps:
 * Wait a few seconds and you will see all the .csv files in the chosen folder
 
 
-## CSV Reader (Java)
+## CSV Reader (Java) ☕
 To perform CSV Reading of Beck's e-comerce files, follow these steps:
 
 * Download the "CSVReader.jar" file
@@ -82,5 +82,9 @@ To perform CSV Reading of Beck's e-comerce files, follow these steps:
 * Paste the full path of the folder where you saved the scraping files
 
 * Choose the read option
+
+## Thanks 🚀
+
+I would like to express my gratitude for the opportunity to be part of this project and for the valuable learning experience it provided. I thank everyone involved for allowing me to grow professionally and contribute to the success of this project. 😃🚀
 
     
